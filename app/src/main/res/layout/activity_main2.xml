@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/pixiebg2"
+    tools:context="pixie.blox.pixiefoods.Main2Activity">
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/scoreLabel"
+            android:layout_width="189dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-black"
+            android:paddingLeft="30dp"
+            android:text="SCORE : 0"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/BackButton"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_gravity="bottom|right"
+            android:background="@android:color/holo_green_light"
+            android:text="MAIN MENU"
+            android:onClick="mainMenu"/>
+
+
+        <ImageView
+            android:id="@+id/box"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/iconpixie2" />
+
+        <Button
+            android:id="@+id/pauseBtn"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_gravity="right"
+            android:background="@android:color/holo_green_light"
+            android:text="PAUSE"
+            android:onClick="pausePushed" />
+
+        
+        <ImageView
+            android:id="@+id/black"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/pixieblock" />
+        
+        <ImageView
+            android:id="@+id/black2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/pixieblock" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_green_light"
+            android:text="TRY AGAIN"
+            android:onClick="tryAgain"/>
+
+
+    </FrameLayout>
+
+</LinearLayout>
